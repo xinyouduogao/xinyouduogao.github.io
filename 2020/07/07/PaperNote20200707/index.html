@@ -5,15 +5,31 @@
   
 
   
-  <title>Hexo</title>
+  <title>Discussion Alignment 那些事儿 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="浅谈域自适应（Domain Adaptation）中的分布对齐 Domain Adaptation  &amp;ensp;第一次计划写一篇较长的论文笔记，交待一下什么是域自适应（domain adaptation）：一般论文常用的定义, 给定两个数据集Ds 和Dt，其中Ds为源域，Dt为目标域，在domain adaptation中，学习目标就是通过leveraging源域Ds学习到的经验，从而能得到目标">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Discussion Alignment 那些事儿">
+<meta property="og:url" content="http://yoursite.com/2020/07/07/PaperNote20200707/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="浅谈域自适应（Domain Adaptation）中的分布对齐 Domain Adaptation  &amp;ensp;第一次计划写一篇较长的论文笔记，交待一下什么是域自适应（domain adaptation）：一般论文常用的定义, 给定两个数据集Ds 和Dt，其中Ds为源域，Dt为目标域，在domain adaptation中，学习目标就是通过leveraging源域Ds学习到的经验，从而能得到目标">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/Marginal.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/Conditional1.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/Conditional2.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/JDA.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/BDA.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/MEDA.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/MEDA1.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/mu.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/DDAN.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/MDDA.png">
+<meta property="article:published_time" content="2020-07-06T16:45:30.000Z">
+<meta property="article:modified_time" content="2020-07-06T18:06:39.286Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="PaperNote">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/07/PaperNote20200707/Marginal.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +78,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-PaperNote20200707" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-PaperNote20200707" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/07/PaperNote20200707/" class="article-date">
   <time datetime="2020-07-06T16:45:30.000Z" itemprop="datePublished">2020-07-07</time>
@@ -77,8 +91,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/07/PaperNote20200707/">Discussion Alignment 那些事儿</a>
+    <h1 class="article-title" itemprop="name">
+      Discussion Alignment 那些事儿
     </h1>
   
 
@@ -133,95 +147,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Nonsense20200704" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/04/Nonsense20200704/" class="article-date">
-  <time datetime="2020-07-03T16:52:06.000Z" itemprop="datePublished">2020-07-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/04/Nonsense20200704/">Nonsense20200704</a>
-    </h1>
+    <a href="/2020/07/04/Nonsense20200704/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Nonsense20200704</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="胡思乱想20200704"><a href="#胡思乱想20200704" class="headerlink" title="胡思乱想20200704"></a>胡思乱想20200704</h1><p>昨天晚上开二院的项目的时候，师兄和老师讨论目标检测的框能不能自动标记的时候，因为意见不合，或者两边的想法不一致，老师发了很多的脾气，其实谁都没有太大的错，师兄最近在实习，自己的论文也还没有什么头绪，事情很多，心里自然对项目有点抵触或者推脱吧，而老师自然也是因为他实习会有不开心的，还说到项目做得也不好，越是能力差的问题越多，自己没有去查，对自己的领域和研究成功都不熟悉。</p>
-<p>个人觉得其实很多时候，因为大家都很忙，少了静下心来的沟通交流，自然就会有误解和自己的判断在里面，师兄固然有不对的地方，作为学生，应该先去了解或者说，去学习，明白其中的原理，实施步骤。老师呢，很多时候的指导就是给出建设性意见，其他的还是要靠我们自己去探索和进一步的挖掘吧。他还提到要是该延期，就谁都帮不了谁，这应该是气话吧，毕竟我感觉虽然容易较真和生气，王老师还是觉得仲李师兄也算挺用功的了。</p>
-<p>这也让我们有很大的压力，现在已经入学一年半了，从一开始毕业设计指导我的，想着本科毕业可以写一篇文章，但是去年到现在，自己的进步真的挺少的，还是一样的静不下心来，还是一样的不想学习。不管是论文、项目、代码都没有什么进展，很多时候都感觉辜负了老师的期待，并且师兄们明显给人感觉就是觉得你不行，要想进步其实很简单，静下心来，多学，多记，多查吧，每次都对自己说的这样的话，但是真正做到的时候太少了。</p>
-<p>不管怎么样，还是要不要辜负了别人的期待，也要让那些狗眼看人低的人知道，他们有多低估你。</p>
-<h2 id="Mamba-Mentality"><a href="#Mamba-Mentality" class="headerlink" title="Mamba Mentality"></a>Mamba Mentality</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/04/Nonsense20200704/" data-id="ckc6ha9yt000018vc9b2t6hx4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nonsense/" rel="tag">Nonsense</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-Nonsense20200621" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/21/Nonsense20200621/" class="article-date">
-  <time datetime="2020-06-20T16:58:31.000Z" itemprop="datePublished">2020-06-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/21/Nonsense20200621/">Nonsense20200621</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>算下来从离开家回到上海也已经有半个月的时间了，原本觉得到这边以后，就要安心做自己的事情，但是这么长的时间里面还是感觉没做什么事情，现在是周六晚上，在上周日的时候在便笺上面记着什么时候起床，什么时候开始工作，但是很多时候都是状态不好，静不下心来。除去实验室要做的一些事情，真的也算是什么事情都没有做，现在北京的疫情影响，估计返校时间还是又要推迟了，照这样看来返校自己的状态难道就会好很多吗？感觉也不见得吧，在学校很多时候也有一些实验室相关的事情，然后其他的一些时间又爱拖延又不能专注的看论文、学代码和做实验。</p>
-<p>现在感觉就是返校的话也只会一事无成，反倒让自己的时间和空间更少，不能先提升或者学一些自己想学的东西，所以最近在这边就要利用好时间，将自己的基础提升一些，然后基础实验也多学一下。</p>
-<p>下周就能够把研究生和博士期间需要上的课全部上完并且完成考试了，上学期的成绩总体还是让我很满意的，但是这学期的还是保持一样的态度，先把这些考试都拿到一个较好的成绩，至于奖学金就看后面吧，主要其实还是论文、科研和专业能力这些方面，有了好的科研成果，不管是自己还是老师那边，任何方面都会好说很多。这里想说之前在知乎上面看到的，到了研究生一定要知道的东西，导师并不是老师，研究生并不是学生，但是其实自己的导师对学生而言，我个人认为是没有什么可以挑剔的点，有问题能够及时沟通，也会站在你的角度考虑问题，还会在同门面前估计你的面子，况且现在在实验室也并没有像是在公司那样，其实也算是很轻松的，之前和师兄聊天的时候，也有聊到，等到真正去了公司工作，比在实验室难受的事情太多了。所以现在在把实验室的事情弄好后，多利用一些其他时间，搞搞自己的东西，不管是想学什么，一定要是去学，想做什么，也一定要是去做，而不是只会想那么多，付诸行动的却又少之又少。</p>
-<p>还是要理好实验室的事情、自己的科研、以及生活之间的关系吧，这周其实打游戏的时间少了很多，上海交通大学的那个统计学习与机器学习的课程真的讲的很好，不管是推导、思想还是对于课程知识的讲解都是比较透彻的，教学模式也新颖能够学到很多，跟着学习吧，还有爱可可·爱生活北邮陈光老师的python教程，带着理清楚编程逻辑、提出问题和解决问题的过程，代码的调试和出错这些还是自己慢慢练习才会变得熟练的。另外就是管理好自己的时间，要时刻明白自己的任务吧，总之还是，行动最重要。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/21/Nonsense20200621/" data-id="ckbnxe4mi0000ikvc97qogxtu" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nonsense/" rel="tag">Nonsense</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
